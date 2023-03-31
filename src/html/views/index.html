@@ -1,0 +1,65 @@
+<% var data = { title: "Каталог продукции | АО НЗИВ", author: "Mathetes" }; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<!-- Page Content -->
+<div class="container wrapper">
+  <div class="row align-items-top my-5">
+    <div class="col-sm-12 col-lg-3 mediasize">
+      <%= _.template(require('./../includes/sidebar.html').default)(data) %>
+    </div>
+
+  <div class="col-sm-12 col-lg-9">
+    <a href="http://tara.nziv.ru/contacts.html">
+      <img class="share-banner" src="img/action_03_2023.png">
+    </a>
+    <h2 class="product__heading animate__animated animate__backInDown">Каталог продукции</h2>
+    
+    <div class="card card-block-main">
+      <a class="card-title" href="tanks.html"
+        ><img class="card-img-top" src="img/products/tanksweb.png" alt="Банки." />
+        <div class="card-body product-props"><h5 class="card-title">Банки 0,45-0,8 л</h5></div></a
+      >
+    </div>
+    <div class="card card-block-main">
+      <a class="card-title" href="buckets.html"
+        ><img class="card-img-top" src="img/products/bucketsweb.png" alt="Ведра" />
+        <div class="card-body product-props"><h5 class="card-title">Ведра 3-32 л</h5></div></a
+      >
+    </div>
+    <div class="card card-block-main">
+        <a class="card-title" href="covers.html">
+      <img
+        class="card-img-top"
+        src="../../img/products/coverweb.png"
+        alt="Крышка ведра 5 л"
+      />
+      <div class="card-body product-props">
+        <h5 class="card-title">Крышки</h5>
+      </div>
+    </a>
+    </div>
+    <div class="card card-block-main">
+      <a class="card-title" href="http://tnp.nziv.ru" target="_blank">
+        <img
+          class="card-img-top"
+          src="../../img/products/tnpweb.png"
+          alt="Товары народного потребления"
+        />
+          <div class="card-body product-props">
+            <h5 class="card-title">ТНП</h5>
+          </div>
+        </a>
+    </div>
+
+    <%= _.template(require('./../includes/iconsblock.html').default)(data)%>
+
+  <!-- <video width="100%" controls="controls">
+      <source src="img/russia24.mp4" type="video/mp4">
+  </video> -->
+
+    <%= _.template(require('./../includes/cards.html').default)(data)%>
+
+  </div>
+</div>
+  <%= _.template(require('./../includes/footer.html').default)(data) %>
+</div>

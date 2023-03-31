@@ -1,0 +1,26 @@
+<% var data = { title: "Заголовок | АО НЗИВ", author: "Mathetes" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<!-- Page Content -->
+<div class="container wrapper">
+  <div class="row align-items-top my-5">
+    <div class="col-sm-12 col-lg-3 mediasize">
+      <%= _.template(require('./../includes/sidebar.html').default)(data) %>
+    </div>
+
+    <div class="col-sm-12 col-lg-9 sidebar__block">
+
+    <h2 class="product__heading animate__animated animate__backInDown">Сертификаты</h2>
+      <ul>
+          <li><a href="https://tara.nziv.ru/certs/1.pdf" target="_blank">Декларация  соответствия № ЕАЭС N RU Д-RU.HA88.B.13135 19</a></li>
+          <li><a href="https://tara.nziv.ru/certs/2.pdf" target="_blank">Декларация соответствия ЕАЭС № RU Д-RU.АД78.В.00727 1819</a></li>
+          <li><a href="https://tara.nziv.ru/certs/3.pdf" target="_blank">Декларация соответствия ЕАЭС № RU Д-RU.АД81.В.04069</a></li>
+          <li><a href="https://tara.nziv.ru/certs/4.pdf" target="_blank">Декларация соответствия ЕАЭС № RU Д-RU.АД81.В.04070</a></li>
+          <li><a href="https://tara.nziv.ru/certs/5.pdf" target="_blank">Декларация соответствия О безопасности упаковки</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

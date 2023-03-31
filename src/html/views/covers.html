@@ -1,0 +1,93 @@
+<% var data = { title: "Каталог - крышки | АО НЗИВ", author: "Mathetes" }; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<!-- Page Content -->
+<div class="container wrapper">
+  <div class="row align-items-top my-5">
+    <div class="col-sm-12 col-lg-3 mediasize">
+      <%= _.template(require('./../includes/sidebar.html').default)(data) %>
+    </div>
+
+    <div class="col-sm-12 col-lg-9">
+      <div class="iconsblock">
+        <%= _.template(require('./../includes/iconsblock.html').default)(data)%>
+      </div>
+      <h2 class="product__heading animate__animated animate__backInDown">Крышки</h2>
+      
+      <div class="card card-block">
+          <a class="card-title" href="cover08.html">
+        <img
+          class="card-img-top"
+          src="../../img/products/cover08.png"
+          alt="Крышка 0,45-0,8 л"
+        />
+        <div class="card-body product-props">
+          <h5 class="card-title">Крышка 0,45-0,8 л</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card card-block">
+          <a class="card-title" href="cover3.html">
+        <img
+          class="card-img-top"
+          src="../../img/products/cover3.png"
+          alt="Крышка ведра 3 л"
+        />
+        <div class="card-body product-props">
+          <h5 class="card-title">Крышка ведра 3 л</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card card-block">
+          <a class="card-title" href="cover5.html">
+        <img
+          class="card-img-top"
+          src="../../img/products/cover5.png"
+          alt="Крышка ведра 5 л"
+        />
+        <div class="card-body product-props">
+          <h5 class="card-title">Крышка ведра 5 л</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card card-block">
+          <a class="card-title" href="cover10.html">
+        <img
+          class="card-img-top"
+          src="../../img/products/cover10.png"
+          alt="Крышка ведра 10 л"
+        />
+        <div class="card-body product-props">
+          <h5 class="card-title">Крышка ведра 10 л</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card card-block">
+          <a class="card-title" href="cover21.html">
+        <img
+          class="card-img-top"
+          src="../../img/products/cover_from21.png"
+          alt="Крышка ведра 21 л"
+        />
+        <div class="card-body product-props">
+          <h5 class="card-title">Крышка ведра 21 л</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card card-block">
+          <a class="card-title" href="cover32.html">
+        <img
+          class="card-img-top"
+          src="../../img/products/cover_from21.png"
+          alt="Крышка бака 32 л"
+        />
+        <div class="card-body product-props">
+          <h5 class="card-title">Крышка бака 32 л</h5>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <%= _.template(require('./../includes/footer.html').default)(data) %>
+</div>
