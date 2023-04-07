@@ -13,42 +13,45 @@
       <img class="share-banner" src="img/action_03_2023.png">
     </a>
     <h2 class="product__heading animate__animated animate__backInDown">Каталог продукции</h2>
-    
-    <div class="card card-block-main">
-      <a class="card-title" href="tanks.html"
-        ><img class="card-img-top" src="img/products/tanksweb.png" alt="Банки." />
-        <div class="card-body product-props"><h5 class="card-title">Банки 0,45-0,8 л</h5></div></a
-      >
-    </div>
-    <div class="card card-block-main">
-      <a class="card-title" href="buckets.html"
-        ><img class="card-img-top" src="img/products/bucketsweb.png" alt="Ведра" />
-        <div class="card-body product-props"><h5 class="card-title">Ведра 3-32 л</h5></div></a
-      >
-    </div>
-    <div class="card card-block-main">
-        <a class="card-title" href="covers.html">
-      <img
-        class="card-img-top"
-        src="../../img/products/coverweb.png"
-        alt="Крышка ведра 5 л"
-      />
-      <div class="card-body product-props">
-        <h5 class="card-title">Крышки</h5>
+    <div class="card-deck">
+      <div class="card">
+        <a class="card-title" href="tanks.html"
+          ><img class="card-img-top" src="img/products/tanksweb.png" alt="Банки." />
+          <div class="card-body product-props"><h5 class="card-title">Банки 0,45-0,8 л</h5></div></a
+        >
       </div>
-    </a>
+      <div class="card">
+        <a class="card-title" href="buckets.html"
+          ><img class="card-img-top" src="img/products/bucketsweb.png" alt="Ведра" />
+          <div class="card-body product-props"><h5 class="card-title">Ведра 3-32 л</h5></div></a
+        >
+      </div>
     </div>
-    <div class="card card-block-main">
-      <a class="card-title" href="http://tnp.nziv.ru" target="_blank">
+    <div class="card-deck">
+      <div class="card">
+          <a class="card-title" href="covers.html">
         <img
           class="card-img-top"
-          src="../../img/products/tnpweb.png"
-          alt="Товары народного потребления"
+          src="../../img/products/coverweb.png"
+          alt="Крышка ведра 5 л"
         />
-          <div class="card-body product-props">
-            <h5 class="card-title">ТНП</h5>
-          </div>
-        </a>
+        <div class="card-body product-props">
+          <h5 class="card-title">Крышки</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card">
+        <a class="card-title" href="http://tnp.nziv.ru" target="_blank">
+          <img
+            class="card-img-top"
+            src="../../img/products/tnpweb.png"
+            alt="Товары народного потребления"
+          />
+            <div class="card-body product-props">
+              <h5 class="card-title">ТНП</h5>
+            </div>
+          </a>
+      </div>
     </div>
 
     <%= _.template(require('./../includes/iconsblock.html').default)(data)%>
@@ -59,7 +62,7 @@
 
     <%= _.template(require('./../includes/cards.html').default)(data)%>
 
+    </div>
   </div>
 </div>
-  <%= _.template(require('./../includes/footer.html').default)(data) %>
-</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %> 
