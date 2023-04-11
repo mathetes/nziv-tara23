@@ -7,6 +7,7 @@
 }
 
 .card-deck {
+    margin-bottom: 30px;
     @extend .card-group;
     gap: $spacer * 2; // create a gutter
 

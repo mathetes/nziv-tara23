@@ -14,13 +14,13 @@
     </a>
     <h2 class="product__heading animate__animated animate__backInDown">Каталог продукции</h2>
     <div class="card-deck">
-      <div class="card">
+      <div class="card card-catalog">
         <a class="card-title" href="tanks.html"
           ><img class="card-img-top" src="img/products/tanksweb.png" alt="Банки." />
           <div class="card-body product-props"><h5 class="card-title">Банки 0,45-0,8 л</h5></div></a
         >
       </div>
-      <div class="card">
+      <div class="card card-catalog">
         <a class="card-title" href="buckets.html"
           ><img class="card-img-top" src="img/products/bucketsweb.png" alt="Ведра" />
           <div class="card-body product-props"><h5 class="card-title">Ведра 3-32 л</h5></div></a
@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="card-deck">
-      <div class="card">
+      <div class="card card-catalog">
           <a class="card-title" href="covers.html">
         <img
           class="card-img-top"
@@ -40,7 +40,7 @@
         </div>
       </a>
       </div>
-      <div class="card">
+      <div class="card card-catalog">
         <a class="card-title" href="http://tnp.nziv.ru" target="_blank">
           <img
             class="card-img-top"
@@ -54,14 +54,19 @@
       </div>
     </div>
 
-    <%= _.template(require('./../includes/iconsblock.html').default)(data)%>
+      <section  class="section-wrapper">
+      <%= _.template(require('./../includes/iconsblock.html').default)(data)%>
+      </section>
+      
+      <section  class="section-wrapper">
+        <video width="100%" controls="controls">
+          <source src="img/russia24.mp4" type="video/mp4">
+        </video>
+      </section>
 
-  <!-- <video width="100%" controls="controls">
-      <source src="img/russia24.mp4" type="video/mp4">
-  </video> -->
-
-    <%= _.template(require('./../includes/cards.html').default)(data)%>
-
+      <section  class="section-wrapper">
+        <%= _.template(require('./../includes/cards.html').default)(data)%>
+      </section>
     </div>
   </div>
 </div>
