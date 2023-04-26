@@ -57,17 +57,17 @@ body {
 }
 
 .share-banner {
-  min-width: 100%;
+  width: 100%;
   margin-bottom: 40px;
 }
 
 .card-img-size {
-  width: 85%; 
+
 }
 
 .card-text-style {
   text-align: center;
-  font-size: 1.5vmin;
+  font-size: 2.5vmin;
 }
 
 .card-text-fraze {
@@ -82,6 +82,10 @@ body {
 
 .card-wrapper {
   border: 0;
+}
+
+.card-unit {
+  margin-bottom: 50px;
 }
 
 .section-wrapper {
