@@ -66,9 +66,9 @@
 .catalog-navbar .navbar-brand {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  font-weight: 700;
+  // font-weight:400;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   margin-left: 15px;
@@ -89,8 +89,8 @@
 .catalog-navbar .navbar-nav .nav-item .nav-link {
   display: block;
   // border-bottom: 1px solid rgba(100%, 0%, 0%, 1);
-  padding-left: 26px;
-  padding-right: 20px;
+  // padding-left: 26px;
+  // padding-right: 20px;
   color: #ffffff;
   transition: 0.2s all ease-out;
   position: relative;
@@ -103,7 +103,7 @@
 .catalog-navbar .navbar-nav .nav-item .nav-link:hover,
 .catalog-navbar .navbar-nav .nav-item .nav-link:focus {
   // background-color: red;
-  font-weight: 700;
+  // font-weight: 700;
 }
 // .catalog-navbar .navbar-nav .nav-item .nav-link:before {
 //   font-family: FontAwesome;
