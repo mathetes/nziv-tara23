@@ -1,0 +1,35 @@
+<% var data = { title: "Контейнер 3 литрa | АО НЗИВ", author: "Mathetes" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<!-- Page Content -->
+<div class="container wrapper">
+  <div class="row align-items-top my-5">
+    <div class="col-sm-12 col-lg-3 mediasize">
+      <%= _.template(require('./../includes/sidebar.html').default)(data) %>
+    </div>
+
+    <div class="col-sm-12 col-lg-9 sidebar__block">
+
+      <h2 class="product__heading animate__animated animate__backInDown">
+        Ёмкость - Контейнер 1,1 л
+      </h2>
+      <div class="image__block animate__animated animate__backInLeft">
+        <%=
+        _.template(require('./../includes/containers/container_slider11.html').default)(data)
+        %> <%=
+        _.template(require('./../includes/modalorder.html').default)(data) %>
+      </div>
+      <div class="caracters__block animate__animated animate__backInRight">
+        <h2 class="font-weight-light caracters__heading">
+          Характеристики изделия
+        </h2>
+        <%=
+        _.template(require('./../includes/containers/table_container11.html').default)(data)
+        %>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
